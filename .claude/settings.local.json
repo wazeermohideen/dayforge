@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nConvert JavaScript project to TypeScript\n\nMigrated entire codebase from JavaScript to TypeScript with full type safety:\n- Created comprehensive type definitions (Todo, Habits, ScheduleItem, etc.)\n- Converted all components (.js/.jsx -> .tsx) with proper React FC typing\n- Converted all services (.js -> .ts) with full async/await and API typing\n- Added tsconfig.json with React and path alias support\n- Updated configuration files (tailwind.config.ts, postcss.config.ts)\n- Installed TypeScript dependencies (@types/react, @types/react-dom, @types/node)\n- Removed jsconfig.json (no longer needed with TypeScript)\n- Project builds successfully with zero TypeScript errors\n\nFiles converted:\n- src/index.tsx (entry point)\n- src/App.tsx (root component)\n- src/authConfig.ts (MSAL configuration)\n- src/components/Login.tsx (login component)\n- src/components/TodoAssistant.tsx (main app component)\n- src/services/api.ts (API service with interceptors)\n- src/types/index.ts (shared type definitions)\n- tailwind.config.ts, postcss.config.ts (config files)\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
