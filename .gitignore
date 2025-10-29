@@ -59,3 +59,4 @@ build/
 agent.md
 COMPLETION_REPORT.md
 .claude/
+.claude/settings.local.json
